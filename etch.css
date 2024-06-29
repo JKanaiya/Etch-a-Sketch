@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: azure;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282c34;
+}
+#container {
+  height: 90dvh;
+  width: 60%;
+  display: flex;
+  border: white 2px solid;
+  flex-wrap: wrap;
+  aspect-ratio: 1 / 1;
+}
+#container .unit {
+  width: calc(100% / var(--stackNo));
+  height: calc(100% / var(--stackNo));
+  background-color: #5b2bd9;
+}
